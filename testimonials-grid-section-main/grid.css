@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%; 
+
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    position: relative;
+    padding: 3em;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* grid-template-rows: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-areas: 
+    "a a b c"
+    "d e e c"; */
+
+}
+
+/* .daniel{
+    background-color: hsl(263, 55%, 52%);
+    grid-area: a;
+
+}
+
+.jonathan{
+    background-color: hsl(217, 19%, 35%);
+    grid-area: b;
+
+}
+
+.kira{
+    background-color:rgb(250, 144, 144) ;
+    grid-area: c;
+
+}
+
+.jeanette{
+    background-color: rgb(250, 144, 144);
+    grid-area: d;
+
+}
+
+.patrick{
+    background-color:  hsl(219, 29%, 14%);
+    grid-area: e;
+
+} */
+
+#quote{
+    padding: 2em;
+    border-radius: .3em;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+}
+
+p{
+    margin-top: 0;
+}
+
+span{
+    font-weight: bold;
+    position: relative;
+    margin-left: 60px;
+    font-size: 12px;
+    display: block;
+    bottom: 40px;
+    left: 50px;
+
+}
+
+::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 10px;
+    border-bottom: 1px solid black;
+    top: 10px;
+    left: -15px;
+
+}
+
+.pic img{
+    position: relative;
+    left:500px;
+    width: 5em;
+    bottom: 33px;
+
+}
+
+.pix img{
+    border-radius: 80%;
+    position: relative;
+    left: 30px;
+
+}
+
+.dany{
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+}     
+
+.jonathan{
+    background-color:hsl(217, 19%, 35%) ;
+    color: hsl(0, 0%, 100%);
+}
+
+.kita{
+    background-color:hsl(0, 0%, 100%) ;
+    color: hsl(217, 19%, 35%)
+    ;
+}
+
+.jeanette{
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(217, 19%, 35%);
+}
+
+.trick{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+
+@media (min-width:550px) {
+
+    .dany{
+        grid-column: auto / span 2;
+    }
+    
+    .trick{
+        grid-column: auto / span 2; 
+    }
+
+    .kita{
+        grid-row: auto / span 2;
+    }
+}
